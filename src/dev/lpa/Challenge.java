@@ -3,7 +3,8 @@ package dev.lpa;
 import java.util.*;
 
 public class Challenge {
-//    private static ArrayList<String> itemList;
+
+    private static ArrayList<String> itemList;
 
     public static void main(String[] args){
         ArrayList<String> itemList = new ArrayList<>();
