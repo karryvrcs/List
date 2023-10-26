@@ -23,12 +23,12 @@ public class BigO {
     //   regardless how many element we add.
     // But as soon as we reach the capacity, all the elements need to be copied in memory (to the new ArrayList), the single add would have maximum cost of O(n)
 
-    // More exactly definiton:
+    // More exactly definition:
     // O(1) - constant time - operation's cost (time) should be constant regardless of the number of elements.
     // O(n) - linear time - operation's cost should increase linearly with the number of elements.
     // O(1)* - constant amortized time - somewhere between O(1) and O(n), but closer to O(1) as efficiencies are gained.
 
-    // For contians method, it might not find a match until the last index, this is the worst case scenario, O(n)
+    // For contains method, it might not find a match until the last index, this is the worst case scenario, O(n)
 
 
     // Doubly linked list: an element is linked to the previous elements, and it's also linked to the next elements.
@@ -37,9 +37,24 @@ public class BigO {
     // For ArrayList, retrieval is just a simple math (address of the first element + index)
     // For LinkedList, we have to start at the head or tail, and check if the element matches.
     //    or keep track of the number of elements traversed, if we are matching by an index, because the index isn't stored as part of the list.
-    //    for example, I want ot find the 5th element, i would still have to traverse the chain this way to get that fifth element.
+    //    for example, I want ot find the 5th element, I would still have to traverse the chain this way to get that fifth element.
 
     // Inserting or removing an Element may be less costly than using an ArrayList.
     // We just want to break two links in the chain, and re-establishing two different links, no new array needs to be created and elements don't need to be shifted.
 
+
+    // Queue and stack:
+    // LinkedList implements the Queue and Stack methods as well.
+    // A Queue is a First-In, First-Out (FIFO) Data Collection.
+    // Inserts at tail, remove from head.
+    // Poll is used to retrieve and remove the head (first element) of the queue. (Poll the queue)
+    // Offer is used to add an element to the tail of the queue.
+
+    // Single-ended queues always process elements from the start of the queue.
+    // Double-ended queue allows access to both start and end of the queue. (LinkedList is an example of this.
+
+
+    // Stack is a Last-In, first-Out (LIFO) Data Collection.
+    // When you add an item, you [push] it onto the stack.
+    // When you want to retrieve an item, you will take the top item, or [pop] it from the stack.
 }
